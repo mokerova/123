@@ -7,11 +7,11 @@ int main(void){
  double c;
  double kor;
  int i;
- int q;
- do {
-    q = scanf("%Lf %Lf %Lf",&a, &b, &c);
- } while q != 3;
-    for (i = 0;i < 2;i++) {
+ int e;
+  do {
+    q = scanf("%lf %lf %lf",&a, &b, &c);
+ } while (e != 3);
+    for (i = 0; i < 2;i++) {
       /*  if ((a == 0.0 && b == 0.0) || (b * b - 4 * a * c) < 0){
             printf ("\n");
             break;
