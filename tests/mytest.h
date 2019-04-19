@@ -10,7 +10,7 @@ extern "C" {
 TEST(fnci, num1) {
     ASSERT_DOUBLE_EQ(fun(1,4,4,0),-2);
     ASSERT_DOUBLE_EQ(fun(2, 4, 2, 0), -1);
-    ASSERT_DOUBLE_EQ(fun(1, -6, 9, 0), 3);
+    ASSERT_DOUBLE_EQ(fun(1, -6, 9, 1), 3);
 }
 
 TEST(funci, num2) {
