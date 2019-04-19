@@ -4,14 +4,14 @@
 int main(void){
  double a, b, c, kor;
  int i;
-    scanf("%Lf%Lf%Lf",&a, &b, &c);
+    scanf("%LF%LF%LLF",&a, &b, &c);
     for (i = 0;i < 2;i++) {
       /*  if ((a == 0.0 && b == 0.0) || (b * b - 4 * a * c) < 0){
             printf ("\n");
             break;
         }*/
         kor = fun(a,b,c,i);
-        printf ("x%d = %lf ",i+1, kor);
+        printf ("x%d = %LF ",i+1, kor);
         if(a == 0.0 || (b * b - 4 * a * c) == 0.0){
             printf ("\n");
             break;
