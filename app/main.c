@@ -2,16 +2,22 @@
 #include "myfunc.h"
 
 int main(void){
- double a, b, c, kor;
+ double a;
+ double b;
+ double c;
+ double kor;
  int i;
-    scanf("%Lg %Lg %Lg",&a, &b, &c);
+ int q;
+ do {
+    q = scanf("%Lf %Lf %Lf",&a, &b, &c);
+ } while q != 3;
     for (i = 0;i < 2;i++) {
       /*  if ((a == 0.0 && b == 0.0) || (b * b - 4 * a * c) < 0){
             printf ("\n");
             break;
         }*/
         kor = fun(a,b,c,i);
-        printf ("x%d = %Lg ",i+1, kor);
+        printf ("x%d = %Lf ",i+1, kor);
         if(a == 0.0 || (b * b - 4 * a * c) == 0.0){
             printf ("\n");
             break;
