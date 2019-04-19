@@ -17,7 +17,7 @@ int main(void){
             break;
         }*/
         kor = fun(a,b,c,i);
-        printf ("x%d = %Lf ",i+1, kor);
+        printf ("x%d = %lf ",i+1, kor);
         if(a == 0.0 || (b * b - 4 * a * c) == 0.0){
             printf ("\n");
             break;
