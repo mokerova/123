@@ -4,7 +4,7 @@
 int main(void){
  double a, b, c, kor;
  int i;
-    scanf("%LF%LF%LLF",&a, &b, &c);
+    scanf("%LF %LF %LF",&a, &b, &c);
     for (i = 0;i < 2;i++) {
       /*  if ((a == 0.0 && b == 0.0) || (b * b - 4 * a * c) < 0){
             printf ("\n");
