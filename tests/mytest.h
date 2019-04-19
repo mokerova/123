@@ -16,6 +16,7 @@ TEST(fnci, num1) {
 TEST(funci, num2) {
    ASSERT_DOUBLE_EQ(fun(1, 1, -2, 0), 1);
     ASSERT_DOUBLE_EQ(fun(1, -3, -18,0 ), 6);
+    ASSERT_DOUBLE_EQ(fun(0, -3, -18,0 ), -6);
 }
 
 TEST(funci, negative) {
