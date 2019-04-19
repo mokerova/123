@@ -18,7 +18,13 @@ script:
 after_success:
   - coveralls --root . -E ".*external.*" -E ".*tests.*"
   - build-wrapper-linux-x86-64 --out-dir bw-output make clean all
-  - sonar-scanner
+  sonar-scanner \
+  -Dsonar.projectKey=mokerova_123 \
+  -Dsonar.organization=mokerova-github \
+  -Dsonar.sources=. \
+  -Dsonar.cfamily.build-wrapper-output=bw-output \
+  -Dsonar.host.url=https://sonarcloud.io \
+  -Dsonar.login=871b1201eca71b5bb79da1ed41b1e450de05584c
 
 cache:
   directories:
